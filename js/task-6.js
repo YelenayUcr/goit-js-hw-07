@@ -4,7 +4,7 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 const buttons = document.querySelectorAll('button[type="button"]');
-buttons[1].addEventListener('click', () =>{
+document.querySelector('[data-create]').addEventListener('click', () =>{
     const amount = +document.querySelector('input[type="number"]').value;
     if (amount >= 1 && amount <= 100) {
         const boxes = document.getElementById('boxes');
